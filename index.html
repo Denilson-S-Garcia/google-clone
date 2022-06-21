@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet"  href="assets/css/templateclonegoogle.css"/>
+        <title>Google</title>
+    </head>
+    <body id="body">
+        <header class="cabeçalho_principal">
+           <button class="switch-color" onclick="white()"type="button" name="color-white"></button>
+           <button class="switch-color" onclick="black()"type="button" name="color-black"></button>
+            <nav>
+                <ul class="container_ul">
+                    <li class="li1"><a>Gmail</a></li>
+                    <li class="li2"><a>Imagens</a></li>
+                    <li class="li3"><a><img src="assets/images/tile-icon-21.jpg" width="16" height= "16"></img></a></li>
+                    <li class="li4"></a>Fazer login</a></li>
+                </ul>
+            </nav>
+        
+        </header>
+        <section>
+            <h1><div class="imgemgoogle"><b class="g">G</b><b class="o">o</b><b class="ob">o</b><b class="gb">g</b><b class="l">l</b><b class="e">e</b></div></h1>
+            
+            <form id="buttonoutside" action="" method="GET">
+                <div class="buscador">
+                    <div class="iconeborder">
+                        <img class="iconlupa "src="assets/images/lupagoogleicon.png"  />
+                    </div>
+                    <input class="buscadorgoogle"  autocomplete="off"type="text" name="search" value="" placeholder=""/>
+                    <div class="iconeteclado ">
+                        <img  class="tecladoicon" src="assets/images/logotecgoogle.png" width="22" height="24"/>
+                    </div>
+                    <div class="microicon">
+                        <img class="iconemicro"src="assets/images/microgoogle.png" width="23" height="26"/>
+                    </div>
+                    
+                </div>
+                
+            </form>
+            <div class="buttonpesquisagoogle">
+                <button form="buttonoutside" class="pesquisa">Pesquisa Google</button>
+                <button form="buttonoutside" class="sorte">Estou com sorte</button>
+            </div>
+            
+        </section>
+        <footer>
+            
+            <div class="localidade">
+                <span>Brasil</span>
+             </div>
+             
+            <div class="rodapé">
+                
+                <div class="rodapé_left">
+                    <a href="">Publicidade</a>
+                    <a href="">Negócios</a>
+                    <a href="">Sobre</a>
+                    <a href="">Como funciona a Pesquisa</a>
+                </div>
+                <div class="rodapé_right">
+                    <a href="">Privacidade</a>
+                    <a href="">Termos</a>
+                    <a href="">Configurações</a>
+                </div>
+               
+            </div>
+           
+        </footer> 
+          <script>
+              function white(){
+                limpar()
+                  document.getElementById("body").classList.add('white');
+              }
+              function black(){
+                limpar()
+                  document.getElementById("body").classList.add('black');
+              }
+              function limpar(){
+              document.getElementById("body").classList.remove('white');
+              document.getElementById("body").classList.remove('black');
+              }
+          </script>
+    </body>
+</html>
